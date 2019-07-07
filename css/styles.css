@@ -1,0 +1,333 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #ffffff;
+    background-image: url("Wintery-Sunburst.svg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input::-moz-focus-inner, button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input, textarea {
+    outline: none;
+    font-size: 13px;
+    padding: 6px 0 4px 10px;
+    border: #cecece solid 1px;
+    background: #F6F6f6;
+    border-radius: 8px;
+}
+
+#welcome-window {
+    display: block;
+}
+
+#user-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    color: #977dff;
+
+}
+
+.name-of-fields {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #6a46ff;
+    opacity: 0.5;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.name-case {
+    margin-right: 20px;
+}
+
+.name-of-fields label {
+    color: white;
+}
+
+
+#ship-installation {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    min-width: 600px;
+}
+
+#check-level {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.headline {
+    font-family: "Trebuchet MS", sans serif;
+    text-align: center;
+    font-size: 5em;
+    color: white;
+    text-shadow: 1px 1px 1px #c0bac0,
+    -1px 1px 1px #c0bac0;
+    transition: all .10s;
+}
+
+.boat-img {
+    width: 20%;
+    height: 20%;
+    position: center;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.headline:hover {
+    text-shadow: -1px -1px 1px #c0bac0,
+    1px -1px 1px #c0bac0;
+    color: white;
+    cursor: default;
+}
+
+.field {
+    border-collapse: collapse;
+    height: 30vw;
+    width: 30vw;
+    min-width: 250px;
+    min-height: 250px;
+}
+
+#player-name {
+    width: 150px;
+}
+
+.player-name {
+    width: 50%;
+    height: 1%;
+    text-align: center;
+    border: 3px solid #acfaff;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    top: 10px;
+    font-weight: bold;
+    color: #effffc;
+    background: #6190E8;
+    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);
+    background: linear-gradient(to right, #A7BFE8, #6190E8);
+}
+
+.playing-field {
+    margin: 0 20px;
+}
+
+#ship-selection {
+    border: solid 1px black;
+    width: 20vw;
+    height: 30vw;
+    min-width: 100px;
+    margin: 0 20px;
+    min-height: 200px;
+
+}
+
+#start-game {
+    margin: 0 auto;
+    width: 100px;
+}
+
+#game-preparation {
+    display: none;
+}
+
+#fields {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    width: 100vw;
+    min-width: 700px;
+
+}
+
+#crowns {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-left: calc(50% - 20px);
+    display: none;
+}
+
+#start-installation {
+    margin-right: 20px;
+}
+
+#player-field {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+    min-height: 250px;
+}
+
+#computer-field {
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    min-width: 250px;
+    min-height: 250px;
+}
+
+.game-data {
+    text-align: center;
+    width: 200px;
+    border: 2px solid #f0f3ec;
+    margin: 20px auto;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 5px;
+    background: #98d8d8;
+
+}
+
+td {
+    transition: 500ms;
+}
+
+#game {
+    display: none;
+}
+
+#random-ship {
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+.btn {
+    display: block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 300;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    border: solid 1px;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 0.01);
+    border-radius: 10px;
+}
+
+.btn-green {
+    color: #3CB371;
+    border-color: #3CB371;
+}
+
+.btn-green:hover {
+    background: #5BE7C4;
+    color: #fff;
+    border-color: #5BE7C4;
+}
+
+
+.btn-yellow {
+    color: #b3ab54;
+    border-color: #b3b03d;
+}
+
+.btn-yellow:hover {
+    background: #e2e7b1;
+    color: #fff;
+    border-color: #e7e69d;
+}
+
+.btn-medium {
+    font-size: 0.9375em;
+    padding: 0.5375em 1.375em;
+}
+
+.injury {
+    background-color: orange;
+}
+
+#check-level {
+    position: relative;
+    top: 5px;
+
+
+}
+
+th, td {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: white;
+}
+
+td {
+    background: #97baf3;
+}
+
+td:first-child {
+}
+
+.miss {
+    background-color: #ff917d;
+}
+
+.killed {
+    background-color: red;
+}
+
+.my {
+    background-color: blueviolet;
+}
+
+#game-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 30vw;
+    min-height: 250px;
+    min-width: 200px;
+    justify-content: space-between;
+}
+
+#end-session, #new-game {
+    width: 150px;
+    display: none;
+}
+
+.error {
+    width: 15px;
+    height: 15px;
+    position: relative;
+}
+
+.name-length-error {
+    left: 10px;
+    top: 3px;
+    display: none;
+}
+
+.user-menu-case {
+    width: 190px
+}
+
+#winner {
+    display: none;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
